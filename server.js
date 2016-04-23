@@ -7,6 +7,9 @@ var app = express();
 app.use(bodyParser.json());
 mongoose.set("debug", true); // log connection methods
 mongoose.connect("mongodb://localhost/birds-mongoose-1");
+mongoose.connection.once("open", function() {
+  console.log("Connected to MongoDB");
+});
 
 var port = 3000;
 
