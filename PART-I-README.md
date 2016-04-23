@@ -88,6 +88,8 @@ Your schema should:
 * Set `confirmed` to `false` by default.
 
 Now, define a model for your schema, and add it to the file's exports.
+
+Finally, declare a var for your Sighting model in `server.js`.
  
 ## Step 7: Upgrade 'POST' endpoint to record a sighting
 
