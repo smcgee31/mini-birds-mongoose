@@ -80,6 +80,8 @@ In a new file, `Bird.js`, create a Bird schema using properties from the existin
  
 In a new file, `User.js`, create a User model with the schema properties email, username, level, location, and member.
 
+Declare a var referencing your _User_ model in `server.js`.
+
 ## Step 4: Refactor our _Sighting_ Model
 
 Add a property to the Sighting schema called `user` that will create a relationship between a _User_ and and _Sighting_. Each _Sighting_ should be required to be related to only one _User_. A user may have multiple sightings.
