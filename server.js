@@ -1,9 +1,11 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
+var mongoose = require('mongoose');
 
 var app = express();
 app.use(bodyParser.json());
+mongoose.connect("mongodb://localhost/birds-mongoose-1");
 
 var port = 3000;
 
