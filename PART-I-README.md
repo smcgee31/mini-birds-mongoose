@@ -109,6 +109,8 @@ Modify the GET endpoint to retrieve all sightings with a given `status`, as stat
 
 Update your PUT endpoint to accept a `body` modifying an existing sighting's `order` field. Use the `id` parameter in the query string to identify the sighting to change.
 
+Return the newly updated sighting in your response.
+
 ## Step 10: Upgrade 'DELETE' endpoint to delete a sighting
 
 Update your DELETE endpoint to delete a sighting document by `id` in the query string.
